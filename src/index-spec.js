@@ -3,7 +3,7 @@ const check = require('check-more-types')
 
 /* global describe, it */
 describe('top level api', () => {
-  const api = require('./index')
+  const api = require('./index')()
   it('has name', () => {
     la(api.name === 'conventional', api.name)
   })

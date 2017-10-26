@@ -14,7 +14,7 @@ describe('api', () => {
 })
 
 describe('parse message', () => {
-  const parse = require('./valid-message').parse
+  const parse = require('./valid-message').parse()
 
   it('is a function', () => {
     la(check.fn(parse))
@@ -46,7 +46,7 @@ describe('parse message', () => {
 })
 
 describe('validate message', () => {
-  const validate = require('./valid-message').validate
+  const validate = require('./valid-message').validate()
 
   it('is a function', () => {
     la(check.fn(validate))
